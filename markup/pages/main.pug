@@ -1,0 +1,15 @@
+extends ../layouts/default.pug
+
+include ../components/b-main/b-main
+
+
+block vars
+    - var title = 'Главная'
+
+block content
+    .page__wrapper
+        .page_b-main
+            +b-main({name: ""})
+
+
+

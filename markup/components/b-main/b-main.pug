@@ -1,0 +1,12 @@
+mixin b-main(data)
+    - var data = data || {}
+    +b.b-main
+        .container
+            +e.b-main-top
+                +e.name!=data.name
+                +e.characteristics data.characteristics
+                +e.language
+                    +e.language_name ru
+                    +e.language_partition
+                    +e.language_name.active en
+

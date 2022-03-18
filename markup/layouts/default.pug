@@ -1,0 +1,23 @@
+doctype html
+html(class="no-js", lang="ru")
+    block vars
+
+    include ../../node_modules/bemto.pug/bemto
+    include ../components/head/head.pug
+
+
+    head
+        +head(head.defaults)
+
+    body.page
+        |%=symbols=%
+        block content
+
+        a.page__up
+            //!=pugHelpers.Icon.call(locals, {iconName: 'up'})
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        //script(src='https://unpkg.com/container-query-polyfill/cqfill.iife.min.js')
+        script(src='%=static=%js/vendor.js')
+        script(src='%=static=%js/main.js')
+
