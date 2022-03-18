@@ -7,4 +7,6 @@ TARS: 1.14.3
 FOR START:
 -- npm install'
 
+-- npm start
+
 
